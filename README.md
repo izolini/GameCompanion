@@ -30,8 +30,9 @@ On the main screen of Game Companion, you will find your game cards. To start a 
 
 The first step is the registration of utilities, done by the first button in the upper left corner (the one with a tools symbol). This takes us to the screen below, shown already populated with some utilities for the sake of exemplifying.
 #### Figure 2- Utility Registration Screen
-![Utilities](https://github.com/user-attachments/assets/bbab1904-2335-4d76-88b7-6e18d3723623)
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/bbab1904-2335-4d76-88b7-6e18d3723623" width="600">
+</p>
 Filling out this screen is simple: On the left side, there is a list of utilities already registered and an X button next to each name for deleting said utility. Clicking on the name of the utility enters the edit mode screen (on the right). To add a utility, when not editing one, just fill in the data on the right screen and press the SAVE button.
 
 **Fields:**
@@ -55,8 +56,9 @@ NOTE: The most guaranteed method of closing, although the least elegant, is Forc
 
 Game Companion allows you to centralize your games in a visual interface organized by "cards". To do this, after having registered some utilities, access the second button at the top right of the screen (the one with a game controller symbol). This will open the following screen: 
 #### Figure 3- Game registration screen
-![Games](https://github.com/user-attachments/assets/5e6079b5-0bf5-4ea1-a8b8-614d25b8471d)
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/5e6079b5-0bf5-4ea1-a8b8-614d25b8471d" width="600">
+</p>
 For game registration, we have two methods:
 
 ### Via Steam
@@ -88,8 +90,9 @@ Here is where the magic happens. On the left we have the Start Sequence list, an
 
 The user can adjust the appearance and behavior of Game Companion using the third button at the top of the window (the one with a gear wheel symbol), which will open the following window:
 #### Figure 4-Global settings screen
-![Settings](https://github.com/user-attachments/assets/3372248e-9d25-4be0-be20-792bc5a8b4a2)
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3372248e-9d25-4be0-be20-792bc5a8b4a2" width="600">
+</p>
 - Card Size: Allows adjusting the size of the game grid (small, medium, or large) for better visibility.
 - Background Modes: Supports background with dynamic gradient or the use of personalized wallpaper. A default wallpaper accompanies Game Companion, but you can choose another if you prefer.
 - Categories: Allows the creation of categories for classifying games. Each game can participate in more than one category. All games participate in the ALL category obligatorily.
@@ -131,8 +134,9 @@ If your PC starts to levitate or emit a slight smell of sulfur, consult a priest
 If you submit GameCompanion or its runner.exe to VirusTotal or other analysis services, you'll find that a few AVs may cite it as suspicious.
 
 Example of an analysis item made by Hybrid Analysis (<https://hybrid-analysis.com/>) that "scares" a lot of AVs out there:
-![VT](https://github.com/user-attachments/assets/bd20bf7c-4b63-4be3-9835-ebbd8a4983e5)
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/bd20bf7c-4b63-4be3-9835-ebbd8a4983e5" width="600">
+</p>
 This message is a **classic false positive** from static analysis tools (such as CrowdStrike or VirusTotal). Here's the technical explanation of why this happens:
 
 1\. Where does Game Companion use "Encryption"?
