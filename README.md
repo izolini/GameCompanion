@@ -12,7 +12,7 @@ Lazy users like me, or those tired of using .bat or .cmd files to manage utiliti
 
 # Install
 
-Just copy both GameCompanion.exe and runner.exe to a folder. Better not use it inside Program Files or other "monitored" Windows folders because Game Companion will create a cache folder and log files on this folder as well, and sometimes Windows may be block access to this on these specific monitored folders.
+Just copy both GameCompanion.exe and runner.exe to a folder. Better not use it inside Program Files or other "monitored" Windows folders because Game Companion will create a cache folder and log files on this folder as well, and sometimes Windows may block access to this on these specific monitored folders.
 
 # Main Screen - Game Library
 
