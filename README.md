@@ -2,7 +2,7 @@
 
 **V 1.4.2- Mar/2026**
 
-The Game Companion application works as a personalized gaming environment manager that allows you to manage game libraries and automate the pre- and post-game environment. It was tested on Windows 10 and Windows 11.
+The Game Companion application works as a personalized gaming environment manager (game launcher) that allows you to manage game libraries and automate the pre- and post-game environment. It was tested on Windows 10 and Windows 11.
 
 Game Companion allows you to configure a library of utilities-such as opentrack, trackir, joystick gremlin, steering or joystick drivers, crewchief, SRS, dial exporters, etc.-as well as a library of local or Steam games. In the registration of utilities, it is possible to indicate whether the utility should be launched before (trackir, crewchief, etc.) or after the game is already running (e.g., OBS), as well as inform its closing method (graceful signal, kill task, or command with arguments) after the game ends.
 
