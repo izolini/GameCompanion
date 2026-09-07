@@ -1,6 +1,6 @@
 # GAME COMPANION MANUAL (EN)
 
-**V 1.4.2- Mar/2026**
+**V 2.1.0.0- Sep/2026**
 
 The Game Companion application works as a personalized gaming environment manager (game launcher) that allows you to manage game libraries and automate the pre- and post-game environment. It was tested on Windows 10 and Windows 11.
 
