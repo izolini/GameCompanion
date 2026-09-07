@@ -1,6 +1,6 @@
 # MANUAL DO GAME COMPANION (PT-BR)
 
-**V 1.4.2 - Mar/2026**
+**V 2.1.0.0 - Set/2026**
 
 O aplicativo Game Companion funciona como um gerenciador de ambiente de jogo personalizado que permite gerenciar bibliotecas de jogos e automatizar o ambiente pré e pós-jogo. Ele foi testado no Windows 10 e Windows 11.
 
