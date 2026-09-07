@@ -91,14 +91,17 @@ Here is where the magic happens. On the left we have the Start Sequence list, an
 The user can adjust the appearance and behavior of Game Companion using the third button at the top of the window (the one with a gear wheel symbol), which will open the following window:
 #### Figure 4-Global settings screen
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/3372248e-9d25-4be0-be20-792bc5a8b4a2" width="600">
+  <img src="https://github.com/user-attachments/assets/75dbca39-30e9-4b34-a42a-c9f25fbeaa15" width="600"/>
 </p>
+
 - Card Size: Allows adjusting the size of the game grid (small, medium, or large) for better visibility.
 - Background Modes: Supports background with dynamic gradient or the use of personalized wallpaper. A default wallpaper accompanies Game Companion, but you can choose another if you prefer.
 - Categories: Allows the creation of categories for classifying games. Each game can participate in more than one category. All games participate in the ALL category obligatorily.
 - Default Tab: Defines which category should be displayed as soon as the application is opened.
 - Auto Close: If checked, it will make Game Companion close after the game session is finished.
-- Enable Debug: generates an app.log file in the same folder as Game Companion, where messages of activities performed by the application are stored for verification of its operation. At each new session, the log is overwritten.  
+- Minimize window when launching a game: If checked, will minimize Game Companion window until the game is closed.
+- Enable Debug: generates an app.log file in the same folder as Game Companion, where messages of activities performed by the application are stored for verification of its operation. At each new session, the log is overwritten. 
+
     You can read the log (if any) by pressing the "View Log" button.
 
 
