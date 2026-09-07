@@ -97,14 +97,17 @@ Aqui é onde a mágica acontece. À esquerda temos a lista da Sequência de Iní
 O usuário pode ajustar a aparência e o comportamento do Game Companion usando o terceiro botão no topo da janela (aquele com o símbolo de uma engrenagem), que abrirá a seguinte janela:
 #### Figura 4 - Tela de configurações globais
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/3372248e-9d25-4be0-be20-792bc5a8b4a2" width="600">
+  <img src="https://github.com/user-attachments/assets/75dbca39-30e9-4b34-a42a-c9f25fbeaa15" width="600"/>
 </p>
+
 - **Card Size:** Permite ajustar o tamanho da grade de jogos (pequeno, médio ou grande) para melhor visibilidade.
 - **Background Modes:** Suporta fundo com gradiente dinâmico ou o uso de papel de parede personalizado. Um papel de parede padrão acompanha o Game Companion, mas você pode escolher outro se preferir.
 - **Categories:** Permite a criação de categorias para classificação dos jogos. Cada jogo pode participar de mais de uma categoria. Todos os jogos participam da categoria **ALL** obrigatoriamente.
 - **Default Tab:** Define qual categoria deve ser exibida assim que o aplicativo for aberto.
 - **Auto Close:** Se marcado, fará o Game Companion fechar após a sessão de jogo ser finalizada.
-- **Enable Debug:** gera um arquivo `app.log` na mesma pasta do Game Companion, onde as mensagens das atividades realizadas pelo aplicativo são armazenadas para verificação de seu funcionamento. A cada nova sessão, o log é sobrescrito.  
+- **Minimize window when launching a game:** Se marcado, irá minimizar a janela do Game Companion até que o jogo seja fechado.
+- **Enable Debug:** gera um arquivo `app.log` na mesma pasta do Game Companion, onde as mensagens das atividades realizadas pelo aplicativo são armazenadas para verificação de seu funcionamento. A cada nova sessão, o log é sobrescrito.
+
     Você pode ler o log (se houver) pressionando o botão "View Log".
 
 # NOTAS GERAIS SOBRE O GAME COMPANION
