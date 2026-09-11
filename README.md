@@ -77,7 +77,7 @@ Note that some games, such as ARMA 3 or AUTOMOBILISTA 2, have more than one poss
 
 Some games when launched using steam:// protocol, especially those based on Madness Engine, can present difficulties working with Opentrack or Trackir (or any software that injects something on the shared memory). This is a limitation that I wasn't able to overcome. If you encounter such cases, please make sure to register the game using "local installation method" (below) instead of "steam://" protocol.
 
-If in doubt, you can find the correct process name (Process Name field) by using the "target icon" and clicking the game's name in the process list shown. 
+If in doubt, you can start the game, alt+tab and find the correct process name (Process Name field) by clicking on the "target icon" in the "Process Name" field and choosing the game's name in the process list shown. 
 
 ### Via local installation
 
@@ -117,7 +117,7 @@ The user can adjust the appearance and behavior of Game Companion using the thir
   - MINIMIZE TO TASKBAR: minimize Game Companion window until the game is closed;
   - TRAY MODE: Game Companion will start on system tray. You can open the window by double clicking the tray icon or by right clicking it and using the menu.
 - Enable Windows Toast Notifications: show notification toasts about Game Companion actions.
-- Emergency Panic Hotkey: pressing this special key combination will cause Game Companion to force kill game and utilities. Can be useful in case of game freezing.  
+- Emergency Panic Hotkey: click to alter or leave empty to disable. Pressing this special key combination will cause Game Companion to force kill game and utilities. Can be useful in case of game freezing. 
 - Enable Debug Logging: generates an app.log file in the same folder as Game Companion, where messages of activities performed by the application are stored for verification of its operation. At each new session, the log is overwritten. 
 
     You can read the log (if any) by pressing the "View Log" button.
