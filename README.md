@@ -1,6 +1,6 @@
 # GAME COMPANION MANUAL (EN)
 
-**V 2.1.0.0- Sep/2026**
+**V 2.5.0.0- Sep/2026**
 
 The Game Companion application works as a personalized gaming environment manager (game launcher) that allows you to manage game libraries and automate the pre- and post-game environment. It was tested on Windows 10 and Windows 11.
 
@@ -31,9 +31,9 @@ On the main screen of Game Companion, you will find your game cards. To start a 
 The first step is the registration of utilities, done by the first button in the upper left corner (the one with a tools symbol). This takes us to the screen below, shown already populated with some utilities for the sake of exemplifying.
 #### Figure 2- Utility Registration Screen
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/bbab1904-2335-4d76-88b7-6e18d3723623" width="600">
+  <img src="https://github.com/user-attachments/assets/551eb223-fbba-4a79-a9fc-017b2d5555ec" width="600">
 </p>
-Filling out this screen is simple: On the left side, there is a list of utilities already registered and an X button next to each name for deleting said utility. Clicking on the name of the utility enters the edit mode screen (on the right). To add a utility, when not editing one, just fill in the data on the right screen and press the SAVE button.
+Filling out this screen is simple: On the left side, there is a list of utilities already registered and an X button next to each name for deleting said utility. (Of course, when you start the app for the first time, it will be empty.) Clicking on the name of the utility enters the edit mode screen (on the right). To add a utility, when not editing one, just fill in the data on the right screen and press the SAVE button.
 
 **Fields:**
 
@@ -52,12 +52,20 @@ Filling out this screen is simple: On the left side, there is a list of utilitie
 
 NOTE: The most guaranteed method of closing, although the least elegant, is Force Kill. Test your utilities; if they accept the Signal method, give preference to this. If they have a method that uses arguments, give preference to Command. Use Force Kill as a last resort.
 
+**Environment Presets tab:**
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/fb8b0ecf-3482-41db-a703-38e39c1b60d2" width="600">
+</p>
+
+On this tab, you can save sequences of utilities as presets. This can be useful when registering games that use the same (or very similar) utility sequences to run. By using presets, you can rapidly attribute the same utilities to different games with one click. More on this below.
+
 # Game Library Management
 
 Game Companion allows you to centralize your games in a visual interface organized by "cards". To do this, after having registered some utilities, access the second button at the top right of the screen (the one with a game controller symbol). This will open the following screen: 
 #### Figure 3- Game registration screen
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/5e6079b5-0bf5-4ea1-a8b8-614d25b8471d" width="600">
+  <img src="https://github.com/user-attachments/assets/a48ee8c3-1eb4-48cf-a449-847b7a33c132" width="600">
 </p>
 For game registration, we have two methods:
 
@@ -68,6 +76,8 @@ If your game is from Steam, or if you want to take advantage of a cool game imag
 Note that some games, such as ARMA 3 or AUTOMOBILISTA 2, have more than one possible executable, and the application may choose one that is not ideal. Always check to ensure that the process name is indeed what your game uses when executed. (e.g.: in ARMA 3, it is usually arma3_x64.exe, and in AMS2 it is usually AMS2AVX.exe).
 
 Some games when launched using steam:// protocol, especially those based on Madness Engine, can present difficulties working with Opentrack or Trackir (or any software that injects something on the shared memory). This is a limitation that I wasn't able to overcome. If you encounter such cases, please make sure to register the game using "local installation method" (below) instead of "steam://" protocol.
+
+If in doubt, you can find the correct process name (Process Name field) by using the "target icon" and clicking the game's name in the process list shown. 
 
 ### Via local installation
 
@@ -80,9 +90,12 @@ You also have a "wait" time (in ms!) which is the time Game Companion waits to c
 
 Games can be assigned to one or more categories. Categories are defined in the general options of Game Companion. More on this later.
 
+### Environment Preset
+Use this to load a pre-saved utility sequence, or to save one after adjusting the sequence in the lists below.
+
 ### Launch Sequence and Stop Sequence
 
-Here is where the magic happens. On the left we have the Start Sequence list, and on the right we have the Stop Sequence list. On the left side, you mark the utilities you want to execute before the game when you click on your game card. Note that they will appear in reverse order in the right list (in red), which is the order of execution for closing after the game has ended. You can alter the start and end orders by unchecking and marking again in the desired order on both lists. Leaving a utility unchecked in any list indicates to Game Companion that that utility should be ignored when processing said list. E.g.: if you have marked a utility to start by marking it blue on the left list, but do not want Game Companion to close it at the end of the game, you can mark this utility as "Instant" in its utility registration, or alternatively simply uncheck it from the right list (Stop Sequence) in the registration of a specific game. If it isn't marked red, it will be ignored during the close sequence.
+Here is where the magic happens. On the left we have the Start Sequence list, and on the right we have the Stop Sequence list. On the left side, you mark the utilities you want to execute before the game when you click on your game card. Note that they will appear in reverse order in the right list (in red), which is the order of execution for closing after the game has ended. You can alter the start and end orders by drag and drop on both lists. Leaving a utility unchecked in any list indicates to Game Companion that that utility should be ignored when processing said list. E.g.: if you have marked a utility to start by marking it blue on the left list, but do not want Game Companion to close it at the end of the game, you can mark this utility as "Instant" in its utility registration, or alternatively simply uncheck it from the right list (Stop Sequence) in the registration of a specific game. If it isn't marked red, it will be ignored during the close sequence.
 
 **NOTE: Whenever you see a field with a symbol ⓘ next his label, hover the mouse over it to see a quick help.**
 
@@ -91,7 +104,7 @@ Here is where the magic happens. On the left we have the Start Sequence list, an
 The user can adjust the appearance and behavior of Game Companion using the third button at the top of the window (the one with a gear wheel symbol), which will open the following window:
 #### Figure 4-Global settings screen
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/75dbca39-30e9-4b34-a42a-c9f25fbeaa15" width="600"/>
+  <img src="https://github.com/user-attachments/assets/fc564938-af49-45cd-9c36-45d4d519afa1" width="600"/>
 </p>
 
 - Card Size: Allows adjusting the size of the game grid (small, medium, or large) for better visibility.
@@ -99,8 +112,13 @@ The user can adjust the appearance and behavior of Game Companion using the thir
 - Categories: Allows the creation of categories for classifying games. Each game can participate in more than one category. All games participate in the ALL category obligatorily.
 - Default Tab: Defines which category should be displayed as soon as the application is opened.
 - Auto Close: If checked, it will make Game Companion close after the game session is finished.
-- Minimize window when launching a game: If checked, will minimize Game Companion window until the game is closed.
-- Enable Debug: generates an app.log file in the same folder as Game Companion, where messages of activities performed by the application are stored for verification of its operation. At each new session, the log is overwritten. 
+- Window Operation Mode:
+  - STANDARD: Game Companion window will be kept open in the background during gaming;
+  - MINIMIZE TO TASKBAR: minimize Game Companion window until the game is closed;
+  - TRAY MODE: Game Companion will start on system tray. You can open the window by double clicking the tray icon or by right clicking it and using the menu.
+- Enable Windows Toast Notifications: show notification toasts about Game Companion actions.
+- Emergency Panic Hotkey: pressing this special key combination will cause Game Companion to force kill game and utilities. Can be useful in case of game freezing.  
+- Enable Debug Logging: generates an app.log file in the same folder as Game Companion, where messages of activities performed by the application are stored for verification of its operation. At each new session, the log is overwritten. 
 
     You can read the log (if any) by pressing the "View Log" button.
 
