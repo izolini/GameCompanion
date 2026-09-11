@@ -1,6 +1,6 @@
 # MANUAL DO GAME COMPANION (PT-BR)
 
-**V 2.1.0.0 - Set/2026**
+**V 2.5.0.0 - Set/2026**
 
 O aplicativo Game Companion funciona como um gerenciador de ambiente de jogo personalizado que permite gerenciar bibliotecas de jogos e automatizar o ambiente pré e pós-jogo. Ele foi testado no Windows 10 e Windows 11.
 
@@ -35,9 +35,8 @@ A alteração de ordem só pode ser feita na categoria **ALL**, e as outras cate
 O primeiro passo é o registro de utilitários, feito pelo primeiro botão no canto superior esquerdo (aquele com um símbolo de ferramentas). Isso nos leva à tela abaixo, mostrada já preenchida com alguns utilitários para fins de exemplo.
 #### Figura 2 - Tela de Registro de Utilitários
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/bbab1904-2335-4d76-88b7-6e18d3723623" width="600">
+  <img src="https://github.com/user-attachments/assets/551eb223-fbba-4a79-a9fc-017b2d5555ec" width="600">
 </p>
-![Utilities](https://github.com/user-attachments/assets/bbab1904-2335-4d76-88b7-6e18d3723623)
 
 Preencher esta tela é simples: No lado esquerdo, há uma lista de utilitários já registrados e um botão X ao lado de cada nome para excluir o referido utilitário. Clicar no nome do utilitário entra no modo de edição (à direita). Para adicionar um utilitário, quando não estiver editando um, basta preencher os dados na tela da direita e pressionar o botão **SAVE**.
 
@@ -58,12 +57,18 @@ Preencher esta tela é simples: No lado esquerdo, há uma lista de utilitários 
 
 **NOTA:** O método de fechamento mais garantido, embora o menos elegante, é o Force Kill. Teste seus utilitários; se eles aceitarem o método Signal, dê preferência a este. Se eles tiverem um método que utiliza argumentos, dê preferência ao Command. Use Force Kill como último recurso.
 
+## Aba Environment Presets:
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/fb8b0ecf-3482-41db-a703-38e39c1b60d2" width="600">
+</p>
+Nesta aba, você pode salvar sequências de utilitários. Isto pode ser útil ao cadastrar jogos que usem as mesmas sequências (ou muito parecidas). Ao usar presets, você pode rapidamente atribuir as mesmas sequências de utilitários para diferentes jogos com apenas um clique. Mais sobre isso a seguir.
+
 # Gerenciamento da Biblioteca de Jogos
 
 O Game Companion permite centralizar seus jogos em uma interface visual organizada por "cartões". Para fazer isso, após ter registrado alguns utilitários, acesse o segundo botão no topo direito da tela (aquele com um símbolo de controle). Isso abrirá a seguinte tela: 
 #### Figura 3 - Tela de registro de jogos
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/5e6079b5-0bf5-4ea1-a8b8-614d25b8471d" width="600">
+  <img src="https://github.com/user-attachments/assets/a48ee8c3-1eb4-48cf-a449-847b7a33c132" width="600">
 </p>
 Para o registro de jogos, temos dois métodos:
 
@@ -74,6 +79,8 @@ Se o seu jogo for da Steam, ou se você quiser aproveitar uma imagem legal de jo
 Note que alguns jogos, como ARMA 3 ou AUTOMOBILISTA 2, possuem mais de um executável possível, e o aplicativo pode escolher um que não seja o ideal. Verifique sempre para garantir que o nome do processo seja de fato o que seu jogo utiliza quando executado. (ex: no ARMA 3, geralmente é `arma3_x64.exe`, e no AMS2 é geralmente `AMS2AVX.exe`).
 
 Alguns jogos, quando lançados usando o protocolo `steam://`, especialmente aqueles baseados na Madness Engine, podem apresentar dificuldades para trabalhar com Opentrack ou Trackir (ou qualquer software que injete algo na memória compartilhada). Esta é uma limitação que não consegui superar. Se você encontrar tais casos, certifique-se de registrar o jogo usando o "método de instalação local" (abaixo) em vez do protocolo "steam://".
+
+Se tiver dúvidas, chame o jogo, dê alt+tab e na tela de cadastro, clique no ícone de "alvo" ao lado do campo "Process Name", escolhendo o nome do jogo na lista de processos que vai aparecer.
 
 ### Via instalação local
 
@@ -86,18 +93,21 @@ Você também tem um tempo de **"wait"** (espera, em ms!) que é o tempo que o G
 
 Os jogos podem ser atribuídos a uma ou mais categorias. As categorias são definidas nas opções gerais do Game Companion. Mais sobre isso depois.
 
+### Environment Preset
+Use essa lista para atribuir uma sequência pré-salva de utilitários, ou salve uma a partir da lista que você configurar abaixo.
+
 ### Sequência de Inicialização e Sequência de Parada
 
-Aqui é onde a mágica acontece. À esquerda temos a lista da Sequência de Início (**Start Sequence**), e à direita temos a lista da Sequência de Parada (**Stop Sequence**). No lado esquerdo, você marca os utilitários que deseja executar antes do jogo quando clicar no seu cartão de jogo. Note que eles aparecerão na ordem inversa na lista da direita (em vermelho), que é a ordem de execução para fechamento após o jogo terminar. Você pode alterar as ordens de início e fim desmarcando e marcando novamente na ordem desejada em ambas as listas. Deixar um utilitário desmarcado em qualquer lista indica ao Game Companion que aquele utilitário deve ser ignorado ao processar a referida lista. Ex: se você marcou um utilitário para iniciar deixando-o azul na lista da esquerda, mas não quer que o Game Companion o feche ao final do jogo, você pode marcar este utilitário como "Instant" no seu registro de utilitário, ou alternativamente simplesmente desmarcá-lo da lista da direita (Stop Sequence) no registro de um jogo específico. Se não estiver marcado em vermelho, ele será ignorado durante a sequência de fechamento.
+Aqui é onde a mágica acontece. À esquerda temos a lista da Sequência de Início (**Start Sequence**), e à direita temos a lista da Sequência de Parada (**Stop Sequence**). No lado esquerdo, você marca os utilitários que deseja executar antes do jogo quando clicar no seu cartão de jogo. Note que eles aparecerão na ordem inversa na lista da direita (em vermelho), que é a ordem de execução para fechamento após o jogo terminar. Você pode alterar as ordens de início e fim arrastando e soltando os nomes em ambas as listas. Deixar um utilitário desmarcado em qualquer lista indica ao Game Companion que aquele utilitário deve ser ignorado ao processar a referida lista. Ex: se você marcou um utilitário para iniciar deixando-o azul na lista da esquerda, mas não quer que o Game Companion o feche ao final do jogo, você pode marcar este utilitário como "Instant" no seu registro de utilitário, ou alternativamente simplesmente desmarcá-lo da lista da direita (Stop Sequence) no registro de um jogo específico. Se não estiver marcado em vermelho, ele será ignorado durante a sequência de fechamento.
 
-**NOTA: Sempre que vir um campo com o símbolo ⓘ ao lado do rótulo, passe o mouse sobre ele para ver uma ajuda rápida.**
+**NOTA: Sempre que vir um campo com o símbolo ⓘ ao lado do rótulo, pare o mouse sobre ele para ver uma ajuda rápida.**
 
 # Customização e Configurações Globais
 
 O usuário pode ajustar a aparência e o comportamento do Game Companion usando o terceiro botão no topo da janela (aquele com o símbolo de uma engrenagem), que abrirá a seguinte janela:
 #### Figura 4 - Tela de configurações globais
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/75dbca39-30e9-4b34-a42a-c9f25fbeaa15" width="600"/>
+  <img src="https://github.com/user-attachments/assets/fc564938-af49-45cd-9c36-45d4d519afa1" width="600"/>
 </p>
 
 - **Card Size:** Permite ajustar o tamanho da grade de jogos (pequeno, médio ou grande) para melhor visibilidade.
@@ -105,7 +115,12 @@ O usuário pode ajustar a aparência e o comportamento do Game Companion usando 
 - **Categories:** Permite a criação de categorias para classificação dos jogos. Cada jogo pode participar de mais de uma categoria. Todos os jogos participam da categoria **ALL** obrigatoriamente.
 - **Default Tab:** Define qual categoria deve ser exibida assim que o aplicativo for aberto.
 - **Auto Close:** Se marcado, fará o Game Companion fechar após a sessão de jogo ser finalizada.
-- **Minimize window when launching a game:** Se marcado, irá minimizar a janela do Game Companion até que o jogo seja fechado.
+- **Window Operation Mode:**
+  - STANDARD: a janela do Game Companion comporta-se como uma janela de aplicativo normal durante o jogo;
+  - MINIMIZE TO TASKBAR: a janela minimizará para o system tray e abrirá novamente ao final do jogo;
+  - TRAY MODE: o Game Companion vai iniciar minimizado no system tray. Você pode abrir a janela fazendo duplo clique no ícone do tray ou clicando com o botão direito e usando os comandos do menu;
+- ** Enable Windows Toast Notifications:** mostra notificações na área de mensagens do Windows.
+- **Emergency Panic Hotkey:** clique em cima para escolher ou deixe em branco para desabilitar. Ao usar essa sequência de teclas, instrui o Game Companion para que mate o jogo e os utilitários. Útil no caso de travamento do jogo. 
 - **Enable Debug:** gera um arquivo `app.log` na mesma pasta do Game Companion, onde as mensagens das atividades realizadas pelo aplicativo são armazenadas para verificação de seu funcionamento. A cada nova sessão, o log é sobrescrito.
 
     Você pode ler o log (se houver) pressionando o botão "View Log".
