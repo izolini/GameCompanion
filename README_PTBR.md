@@ -68,7 +68,7 @@ Nesta aba, você pode salvar sequências de utilitários. Isto pode ser útil ao
 O Game Companion permite centralizar seus jogos em uma interface visual organizada por "cartões". Para fazer isso, após ter registrado alguns utilitários, acesse o segundo botão no topo direito da tela (aquele com um símbolo de controle). Isso abrirá a seguinte tela: 
 #### Figura 3 - Tela de registro de jogos
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/a48ee8c3-1eb4-48cf-a449-847b7a33c132" width="600">
+  <img src="https://github.com/user-attachments/assets/d81c9847-10b9-4504-80e8-0ac60ecd7054" width="600">
 </p>
 Para o registro de jogos, temos dois métodos:
 
@@ -92,6 +92,9 @@ O campo **timeout** determina quantos segundos o Game Companion deve esperar par
 Você também tem um tempo de **"wait"** (espera, em ms!) que é o tempo que o Game Companion espera para chamar utilitários atrasados após o início do jogo. Padrão=0.
 
 Os jogos podem ser atribuídos a uma ou mais categorias. As categorias são definidas nas opções gerais do Game Companion. Mais sobre isso depois.
+
+### System Automation
+Use para alterar o dispositivo de saída de áudio e/ou o esquema de energia do Windows. Ambos serão retornados à situação anterior ao final do jogo.
 
 ### Environment Preset
 Use essa lista para atribuir uma sequência pré-salva de utilitários, ou salve uma a partir da lista que você configurar abaixo.
