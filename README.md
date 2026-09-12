@@ -65,7 +65,7 @@ On this tab, you can save sequences of utilities as presets. This can be useful 
 Game Companion allows you to centralize your games in a visual interface organized by "cards". To do this, after having registered some utilities, access the second button at the top right of the screen (the one with a game controller symbol). This will open the following screen: 
 #### Figure 3- Game registration screen
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/a48ee8c3-1eb4-48cf-a449-847b7a33c132" width="600">
+  <img src="https://github.com/user-attachments/assets/d81c9847-10b9-4504-80e8-0ac60ecd7054" width="600">
 </p>
 For game registration, we have two methods:
 
@@ -89,6 +89,9 @@ The timeout field determines how many seconds Game Companion should wait to dete
 You also have a "wait" time (in ms!) which is the time Game Companion waits to call delayed utilities after the game starts. Default=0.
 
 Games can be assigned to one or more categories. Categories are defined in the general options of Game Companion. More on this later.
+
+### System Automation
+Use these to change audio output device and Windows power scheme before running the game. After game ends, the original state is restored.
 
 ### Environment Preset
 Use this to load a pre-saved utility sequence, or to save one after adjusting the sequence in the lists below.
