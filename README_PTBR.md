@@ -72,9 +72,9 @@ O Game Companion permite centralizar seus jogos em uma interface visual organiza
 </p>
 Obs: v2.7 introduziu um novo recurso:
 Opção para desconectar as sequências de inicilização e parada, permitindo ter entradas na lista de parada que não existem na inicialização (para tratar casos onde os próprios jogos disparam serviços ou apps que não são fechadas corretamente ao final).
-
+</p align="center">
 <img src="https://github.com/user-attachments/assets/b633ef8a-8a43-4bb3-853b-9f9572065965" width="800"/>
-
+</p>
 Para o registro de jogos, temos dois métodos:
 
 ### Via Steam
