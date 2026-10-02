@@ -1,6 +1,6 @@
 # GAME COMPANION MANUAL (EN)
 
-**V 2.5.0.0- Sep/2026**
+**V 2.7.0.0- Oct/2026**
 
 The Game Companion application works as a personalized gaming environment manager (game launcher) that allows you to manage game libraries and automate the pre- and post-game environment. It was tested on Windows 10 and Windows 11.
 
@@ -67,6 +67,10 @@ Game Companion allows you to centralize your games in a visual interface organiz
 <p align="center">
   <img src="https://github.com/user-attachments/assets/d81c9847-10b9-4504-80e8-0ac60ecd7054" width="600">
 </p>
+Obs: v2.7 introduced a new feature:
+Option to unlink start and stop sequence lists by game, allowing to put utilities in stop list that aren't started by the app (to deal with some games that start services/apps by themselves and doesn't properly close them at the end).
+<img src="https://github.com/user-attachments/assets/b633ef8a-8a43-4bb3-853b-9f9572065965" width="800"/>
+
 For game registration, we have two methods:
 
 ### Via Steam
