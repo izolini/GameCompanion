@@ -57,6 +57,11 @@ Preencher esta tela é simples: No lado esquerdo, há uma lista de utilitários 
 
 **NOTA:** O método de fechamento mais garantido, embora o menos elegante, é o Force Kill. Teste seus utilitários; se eles aceitarem o método Signal, dê preferência a este. Se eles tiverem um método que utiliza argumentos, dê preferência ao Command. Use Force Kill como último recurso.
 
+v2.8 inseriu um novo recurso "auto-restart" para utilitários: se marcado, o GameCompanion vai monitorar o utilitário após o início do jogo. Se ele for interrompido ou fechar e estiver marcado como auto-restart, será iniciado novamente (até um máximo de três vezes). 
+Se ele falhar mais do que três vezes, o GameCompanion não irá tentar iniciar ele novamente nesta sessão de jogo. 
+
+<img width="422" height="93" alt="image" src="https://github.com/user-attachments/assets/b8635485-690e-479b-9602-04e5a259e9c4" />
+
 ## Aba Environment Presets:
 <p align="center">
   <img src="https://github.com/user-attachments/assets/fb8b0ecf-3482-41db-a703-38e39c1b60d2" width="600">
