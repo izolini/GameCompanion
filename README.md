@@ -52,7 +52,7 @@ Filling out this screen is simple: On the left side, there is a list of utilitie
 
 NOTE: The most guaranteed method of closing, although the least elegant, is Force Kill. Test your utilities; if they accept the Signal method, give preference to this. If they have a method that uses arguments, give preference to Command. Use Force Kill as a last resort.
 
-v2.8 insert a new "auto-restart" feature: if checked, GameCompanion will monitor utilities after game start. If an utility crashes and is marked as auto-restart, then it will be started again (up to three times). 
+v2.8 insert a new "auto-restart" feature: GameCompanion will monitor utilities with this option checked after game start. If an utility crashes and is marked as auto-restart, then it will be started again (up to three times). 
 If it fails more than three times, GameCompanion will not try to start it again on the same gaming session.
 <img width="422" height="93" alt="image" src="https://github.com/user-attachments/assets/b8635485-690e-479b-9602-04e5a259e9c4" />
 
