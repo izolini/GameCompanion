@@ -55,7 +55,7 @@ NOTE: The most guaranteed method of closing, although the least elegant, is Forc
 v2.8 insert a new "auto-restart" feature: GameCompanion will monitor utilities with this option checked after game start. If an utility crashes and is marked as auto-restart, then it will be started again (up to three times). 
 If it fails more than three times, GameCompanion will not try to start it again on the same gaming session.
 <img width="422" height="93" alt="image" src="https://github.com/user-attachments/assets/b8635485-690e-479b-9602-04e5a259e9c4" />
-v2.9 added the ability to drag and drop a link or .exe file over to pre-fill the fields. 
+v2.9 added the ability to drag and drop a link or .exe file over the new utility window in order to pre-fill the fields. 
 
 
 **Environment Presets tab:**
@@ -112,7 +112,7 @@ Here is where the magic happens. On the left we have the Start Sequence list, an
 
 **NOTE: Whenever you see a field with a symbol ⓘ next his label, hover the mouse over it to see a quick help.**
 
-v2.9 added the ability to drag and drop a link or .exe file over to pre-fill the fields. 
+v2.9 added the ability to drag and drop a link or .exe file over the new game window in order to pre-fill the fields. The same occurs if a link or .exe file is dropped on the main window. 
 
 # Customization and Global Settings
 
