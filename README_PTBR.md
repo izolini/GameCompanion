@@ -1,6 +1,6 @@
 # MANUAL DO GAME COMPANION (PT-BR)
 
-**V 2.7.0.0 - Set/2026**
+**V 2.9.0.0 - Oct/2026**
 
 O aplicativo Game Companion funciona como um gerenciador de ambiente de jogo personalizado que permite gerenciar bibliotecas de jogos e automatizar o ambiente pré e pós-jogo. Ele foi testado no Windows 10 e Windows 11.
 
@@ -68,6 +68,8 @@ Se ele falhar mais do que três vezes, o GameCompanion não irá tentar iniciar 
 </p>
 Nesta aba, você pode salvar sequências de utilitários. Isto pode ser útil ao cadastrar jogos que usem as mesmas sequências (ou muito parecidas). Ao usar presets, você pode rapidamente atribuir as mesmas sequências de utilitários para diferentes jogos com apenas um clique. Mais sobre isso a seguir.
 
+A versão 2.9 adicionou a possibilidade de arrastar links ou arquivos .exe para a janela de criação de utilitários, preenchendo os campos automaticamente. 
+
 # Gerenciamento da Biblioteca de Jogos
 
 O Game Companion permite centralizar seus jogos em uma interface visual organizada por "cartões". Para fazer isso, após ter registrado alguns utilitários, acesse o segundo botão no topo direito da tela (aquele com um símbolo de controle). Isso abrirá a seguinte tela: 
@@ -114,6 +116,8 @@ Use essa lista para atribuir uma sequência pré-salva de utilitários, ou salve
 Aqui é onde a mágica acontece. À esquerda temos a lista da Sequência de Início (**Start Sequence**), e à direita temos a lista da Sequência de Parada (**Stop Sequence**). No lado esquerdo, você marca os utilitários que deseja executar antes do jogo quando clicar no seu cartão de jogo. Note que eles aparecerão na ordem inversa na lista da direita (em vermelho), que é a ordem de execução para fechamento após o jogo terminar. Você pode alterar as ordens de início e fim arrastando e soltando os nomes em ambas as listas. Deixar um utilitário desmarcado em qualquer lista indica ao Game Companion que aquele utilitário deve ser ignorado ao processar a referida lista. Ex: se você marcou um utilitário para iniciar deixando-o azul na lista da esquerda, mas não quer que o Game Companion o feche ao final do jogo, você pode marcar este utilitário como "Instant" no seu registro de utilitário, ou alternativamente simplesmente desmarcá-lo da lista da direita (Stop Sequence) no registro de um jogo específico. Se não estiver marcado em vermelho, ele será ignorado durante a sequência de fechamento.
 
 **NOTA: Sempre que vir um campo com o símbolo ⓘ ao lado do rótulo, pare o mouse sobre ele para ver uma ajuda rápida.**
+
+A versão 2.9 adicionou a possibilidade de arrastar links ou arquivos .exe para a janela de criação de jogos (ou a janela principal) para preencher automaticamente os campos.
 
 # Customização e Configurações Globais
 
