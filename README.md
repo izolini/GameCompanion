@@ -55,6 +55,7 @@ NOTE: The most guaranteed method of closing, although the least elegant, is Forc
 v2.8 insert a new "auto-restart" feature: GameCompanion will monitor utilities with this option checked after game start. If an utility crashes and is marked as auto-restart, then it will be started again (up to three times). 
 If it fails more than three times, GameCompanion will not try to start it again on the same gaming session.
 <img width="422" height="93" alt="image" src="https://github.com/user-attachments/assets/b8635485-690e-479b-9602-04e5a259e9c4" />
+v2.9 added the ability to drag and drop a link or .exe file over to pre-fill the fields. 
 
 
 **Environment Presets tab:**
@@ -110,6 +111,8 @@ Use this to load a pre-saved utility sequence, or to save one after adjusting th
 Here is where the magic happens. On the left we have the Start Sequence list, and on the right we have the Stop Sequence list. On the left side, you mark the utilities you want to execute before the game when you click on your game card. Note that they will appear in reverse order in the right list (in red), which is the order of execution for closing after the game has ended. You can alter the start and end orders by drag and drop on both lists. Leaving a utility unchecked in any list indicates to Game Companion that that utility should be ignored when processing said list. E.g.: if you have marked a utility to start by marking it blue on the left list, but do not want Game Companion to close it at the end of the game, you can mark this utility as "Instant" in its utility registration, or alternatively simply uncheck it from the right list (Stop Sequence) in the registration of a specific game. If it isn't marked red, it will be ignored during the close sequence.
 
 **NOTE: Whenever you see a field with a symbol ⓘ next his label, hover the mouse over it to see a quick help.**
+
+v2.9 added the ability to drag and drop a link or .exe file over to pre-fill the fields. 
 
 # Customization and Global Settings
 
